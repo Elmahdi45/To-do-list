@@ -1,0 +1,110 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins',sans-serif;
+}
+
+.container{
+     width: 100%;
+     min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #B95C0E);
+     padding: 10px;
+
+     
+}
+
+.todo{
+     display: flex;
+     
+     
+     padding-top: 220px;
+     flex-direction: column;
+     border-radius: 50px;
+     background-color: black;
+     max-width: 1000px;
+     padding: 150px;
+     margin-top: 70px;
+     margin-left: 17%;
+     box-shadow: 0 20px 15px;
+     
+}
+.todo h2{
+     color: #eee;
+     font-size: 40px;
+}
+.todo img{
+     width: 35px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    margin-top: 20px;
+    color: #eee;
+    font-size: 17px;
+}
+button{
+      border: none;
+     outline: none;
+     padding: 16px 50px;
+     background: #B95C0E;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 40px;
+     margin-top: 20px;
+}
+
+
+ul li{
+     list-style: none;
+      font-size: 17px;
+     padding: 12px 8px 12px 50px;
+     user-select: none;
+     cursor: pointer;
+     position: relative;
+     color: #fff;
+     margin-top: 20px;
+     
+}
+ul li::before{
+     content:'';
+     position: absolute;
+     height: 28px;
+     width: 28px;
+     border-radius: 50%;
+     background-image: url(icons8-unchecked-50.png);
+     background-size: cover;
+     background-position: center;
+     top: 8px;
+     left: 2px;
+     color: #fff;
+}
+
+ul li.checked{
+     color: #555;
+     text-decoration: line-through;
+}
+ul li.checked::before{
+     background-image: url(icons8-checkmark-50.png);
+}
+ul li span{
+     position: absolute;
+     right: 0;
+     top: 5px;
+     width: 40px;
+     height: 40px;
+     font-size: 22px;
+     color: orange;
+     line-height: 40px;
+     text-align: center;
+     border-radius: 50%;
+}
+ul li span:hover{
+      background: orangered;
+    color: white;
+    transition: 0.3s;
+}
